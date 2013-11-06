@@ -1,0 +1,26 @@
+{
+  "name": "moonshine-cli",
+  "version": "0.0.1",
+  "author": "Illniyar",
+  "description": "a cli client for moonshine",
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Illniyar/moonshine-cli"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "homepage": "https://github.com/Illniyar/moonshine-cli",
+  "keywords": [
+    "framework",
+    "spa",
+    "mean",
+    "django",
+    "rapid"
+  ],
+  "bin": {
+    "moonshine": "./bin/moonshine"
+  }
+}

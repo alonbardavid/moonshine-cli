@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var path = require("path"),
+	Module = require('module')
+
+var cwdModule = new Module(process.cwd())
+cwdModule.filename = process.cwd()
+cwdModule.paths = Module._nodeModulePaths(process.cwd())
+
+var moonshineLocation = Module._resolveFilename("moonshine-js",cwdModule)
+var cli = path.join(path.dirname(moonshineLocation),"cli")
+require(cli).run(process.argv.slice(2))
